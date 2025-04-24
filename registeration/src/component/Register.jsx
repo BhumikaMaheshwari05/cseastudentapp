@@ -11,7 +11,7 @@ const Register = () => {
         console.log("Sending data to server...");
         
         try {
-            const response = await fetch('http://localhost:3078/register', {
+            const response = await fetch('https://cseastudentapp-backend-gmdy.onrender.com/register', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email, password }),

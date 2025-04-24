@@ -21,7 +21,7 @@ function Login() {
     setLoading(true); // Disable button while sending request
 
     try {
-      const response = await fetch("http://localhost:3078/login", {
+      const response = await fetch("https://cseastudentapp-backend-gmdy.onrender.com/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
